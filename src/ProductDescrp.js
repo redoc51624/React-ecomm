@@ -1,6 +1,5 @@
 import React from 'react';
 import './ProductDescrp.css';
-import Modal from 'react-modal';
 const customStyles = {
   content : {
     top                   : '50%',
