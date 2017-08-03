@@ -3,7 +3,6 @@ import './Home.css';
 import ProductDescrp from './ProductDescrp.js';
 import {Carousel, onChange, onClickItem, onClickThumb} from 'react-responsive-carousel';
 
-
 class Home extends React.Component {
 	constructor() {
       super();
@@ -12,17 +11,17 @@ class Home extends React.Component {
          data: 
          [
             {
-               header: 'First...',
+               header: 'First',
                id: 1,
-               description: "first description",
-               img: "https://www.planwallpaper.com/static/images/best-scenery-wallpaper-21.jpg"
+               description: "Prepared from the best materials in  differnet variant of 350Ml & 650Ml",
+               img: "http://images.all-free-download.com/images/graphiclarge/a_big_tree_landscape_scenery_of_highdefinition_picture_166020.jpg"
             },
 				
             {
                header: 'Second...',
                id: 2,
                description: "2nds description",
-               img: "https://www.planwallpaper.com/static/images/HD-Scenery-Wallpapers-1.jpg"
+               img: "http://images.all-free-download.com/images/graphiclarge/a_big_tree_landscape_scenery_of_highdefinition_picture_166020.jpg"
             },
 				
             {
@@ -52,9 +51,11 @@ class Content extends React.Component {
    render() {
       return (
          <div  className="tiles col-xs-12 col-md-4  col-sm-4 col-lg-4" onClick="">
+         <a>
             <div className="header">{this.props.componentData.header}</div>
             <img alt="image" className="tileImg" src={this.props.componentData.img} width="350px" height="250px"/>
             <div className="descr">{this.props.componentData.description}</div>
+         </a>
          </div>
         
       );
