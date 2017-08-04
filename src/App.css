@@ -85,3 +85,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
 .App-footer{
 	color: white;
 }
+h2{
+  color: white;
+  font-size: 14px;
+}
+h3{
+  font-size: 12px;
+  color: white;
+}
+.specs{
+  color: white;
+}
+.pddescPge:hover{
+  text-decoration: none;
+}

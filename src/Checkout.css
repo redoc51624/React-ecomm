@@ -1,0 +1,7 @@
+.closeBtn{
+    float: right;
+    background: "grey";
+    position: relative;
+    bottom: 80px;
+    font-size: 24px;
+}

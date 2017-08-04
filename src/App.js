@@ -47,7 +47,7 @@ const App = () => (
             <Route path = "/product-1" component = {Product1} />
             <Route path = "/Appliances" component = {Appliances} />
             <Route path = "/Mens" component = {Mens} />
-            <Route path = "/checkout" component = {Checkout} />
+            <Route path = "/womens" component = {Checkout} />
             <Route path = "/Home& Furnitures" component = {HomeFurn} />
 
           </Switch>
