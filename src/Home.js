@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import ProductDescrp from './ProductDescrp.js';
 import {Carousel, onChange, onClickItem, onClickThumb} from 'react-responsive-carousel';
+import Modal from './Modal.js'
 
 class Home extends React.Component {
 	constructor() {
