@@ -2,13 +2,34 @@ import React from 'react';
 import './Home.css';
 import ProductDescrp from './ProductDescrp.js';
 import {Carousel, onChange, onClickItem, onClickThumb} from 'react-responsive-carousel';
-import Modal from './Modal.js'
+import Modal from 'react-modal';
+const customStyles = {
+  
+  content : {
+    top                   : '50%',
+    width                 : '350px',
+    left                  : '50%',
+    border                : '1px solid #ccc',
+    right                 : 'auto',
+    bottom                : 'auto',
+    background            : 'grey',
+    marginRight           : '-50%',
+    transform               : 'translate(-50%, -50%)',
+    overflow                   : 'auto',
+    WebkitOverflowScrolling    : 'touch',
+    borderRadius               : '4px',
+    outline                    : 'none',
+    padding                    : '20px'
+  }
+};
 
 class Home extends React.Component {
+  
 	constructor() {
       super();
 
-      this.state = {
+       this.state = {
+         modalIsOpen: false,
          data: 
          [
             {
@@ -128,10 +149,25 @@ class Home extends React.Component {
                ],       
             }
          ]
-      }
+      };
+        this.openModal = this.openModal.bind(this);
+        this.afterOpenModal = this.afterOpenModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
   }
 
-  
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+ 
+  afterOpenModal() {
+    // references are now sync'd and can be accessed. 
+    this.subtitle.style.color = '#f00';
+  }
+ 
+  closeModal() {
+    this.setState({modalIsOpen: false});
+  }
+
   render() {
     return (
         <div className="row">
@@ -147,12 +183,34 @@ class Home extends React.Component {
 class Content extends React.Component {
    render() {
       return (
-         
+       
          <div  className="tiles col-xs-12 col-md-12  col-sm-12 col-lg-12" onClick="">        
             <div className="header">{this.props.componentData.header}</div>
               <div className="row">
                  {this.props.componentData.products.map((item, i) => (
                 <a className="pddescPge" href="#" onClick={this.openModal}>
+
+              <Modal isOpen={this.state.modalIsOpen} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} style={customStyles} contentLabel="Example Modal">
+                <h2 className="pdName">{this.props.componentData.products[i].productName}</h2>
+                 <span className="closeBtn" onClick={this.closeModal}>x</span>
+                 <div className="modContent">
+                    <div className="tilesL2 col-xs-12 col-md-3  col-md-offet-1 col-sm-3 col-sm-offet-1 col-lg-3 col-lg-offet-1">
+                      <div className="row">
+                         div className="offerTag">{this.props.componentData.products[i].offerTag}</div>
+                          <img alt="image" className="tileImg col-xs-12 col-md-4  col-sm-4 col-lg-4" src={this.props.componentData.products[i].img} width="350px" height="250px"/>                   
+                          <h2 className="pdName">{this.props.componentData.products[i].productName}</h2>
+                                <div className="price">
+                                      <span className="sellPrice">Rs:{this.props.componentData.products[i].sellingPrice}</span>
+                                      <span className="offerPrice">Rs:{this.props.componentData.products[i].offerPrice}</span>
+                                </div>
+                          <h3 className="pdAbout">{this.props.componentData.products[i].about}</h3>
+                    </div>
+                 </div>
+                 <form>
+                 <button className="cancelBtn">Cancel</button>
+                  <button className="addBtn">Add to Bag</button>
+                 </form>
+              </Modal>
 
                   <div className="tilesL2 col-xs-12 col-md-3  col-md-offet-1 col-sm-3 col-sm-offet-1 col-lg-3 col-lg-offet-1">
                       <div className="row">
@@ -174,7 +232,6 @@ class Content extends React.Component {
                 ))}
             </div>
          </div>
-        
       );
    }
 }
