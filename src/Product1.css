@@ -2,6 +2,9 @@
 		text-align: center;
 		margin: 3px 0;
 	}
+	.tileImg{
+		display: block;
+	}
 	.offerPrice{
 		text-align: center;
 		margin: 3px 10px;
@@ -15,4 +18,11 @@
 	.price,.specs{
 		color: white;
 		    text-align: center;
+	}
+	.tilesL2{
+		    margin: 10px 45px;
+		box-shadow: 3px 0 3px grey, -3px 0 3px silver;
+	}
+	.tilesL2:hover{
+		box-shadow: 3px 0 3px silver, -3px 0 3px grey;	
 	}

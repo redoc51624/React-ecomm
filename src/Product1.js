@@ -14,6 +14,7 @@ class Product1 extends React.Component {
                header: 'Mobiles',
                id: 1,
                products: [{
+                    id: 1,
                     productId:"mobSam001",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -23,6 +24,7 @@ class Product1 extends React.Component {
                     img: "https://rukminim1.flixcart.com/image/300/300/mobile/5/b/f/motorola-moto-g5-plus-xt-1686-original-imaes3bzhs4thksp.jpeg?q=70",
                    },
                    {
+                    id: 2,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -33,6 +35,7 @@ class Product1 extends React.Component {
 
                    },
                    {
+                    id: 3,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -47,6 +50,7 @@ class Product1 extends React.Component {
                header: 'Laptops',
                id: 2,
                products: [{
+                    id: 1,
                     productId:"mobSam001",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -56,6 +60,7 @@ class Product1 extends React.Component {
                     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5_usz840ckAdDH2xB6qYhA8vNtyVzPA3bNEyL3CB-E4LRaOtwnA",
                    },
                    {
+                    id: 2,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -66,6 +71,7 @@ class Product1 extends React.Component {
 
                    },
                    {
+                    id: 3,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -80,6 +86,7 @@ class Product1 extends React.Component {
                header: 'Television',
                id: 3,
                products: [{
+                    id: 1,
                     productId:"mobSam001",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -89,6 +96,7 @@ class Product1 extends React.Component {
                      img: "http://images.all-free-download.com/images/graphiclarge/a_big_tree_landscape_scenery_of_highdefinition_picture_166020.jpg",
                    },
                    {
+                    id: 2,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -98,6 +106,7 @@ class Product1 extends React.Component {
                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYtcqmGuG-OWG9cRdK1CPh_DqAcWFVCuo1yXD8g5CWGv9gQj2ELg",
                    },
                    {
+                    id: 3,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -112,6 +121,7 @@ class Product1 extends React.Component {
                header: 'Television',
                id: 4,
                products: [{
+                    id: 1,
                     productId:"mobSam001",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -121,6 +131,7 @@ class Product1 extends React.Component {
                     img: "https://rukminim1.flixcart.com/image/312/312/camera/c/h/h/sony-cyber-shot-dsc-h300-advance-point-and-shoot-original-imadpzjmc3hwsnf7.jpeg?q=70",
                    },
                    {
+                    id: 2,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -130,6 +141,7 @@ class Product1 extends React.Component {
                     img: "https://rukminim1.flixcart.com/image/312/312/camera/c/h/h/sony-cyber-shot-dsc-h300-advance-point-and-shoot-original-imadpzjmc3hwsnf7.jpeg?q=70",
                    },
                    {
+                    id: 3,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -144,6 +156,7 @@ class Product1 extends React.Component {
                header:'Sounds & Home theatre',
                id: 5,
                products: [{
+                    id: 1,
                     productId:"mobSam001",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -153,6 +166,7 @@ class Product1 extends React.Component {
                     img: "https://rukminim1.flixcart.com/image/312/312/home-theatre-system/r/b/h/eternity-2-1-bluetooth-multimedia-speaker-for-home-theatre-use-original-imaebuc9bdhjyazv.jpeg?q=70",
                    },
                    {
+                    id: 2,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -162,6 +176,7 @@ class Product1 extends React.Component {
                     img: "https://rukminim1.flixcart.com/image/312/312/home-theatre-system/x/b/k/jamlab-8-sub-10-swans-original-imaehujtyewf7sfg.jpeg?q=70",
                    },
                    {
+                    id: 3,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -176,6 +191,7 @@ class Product1 extends React.Component {
                header:'Sounds & Home theatre',
                id: 5,
                products: [{
+                    id: 1,
                     productId:"mobSam001",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -185,6 +201,7 @@ class Product1 extends React.Component {
                     img: "https://rukminim1.flixcart.com/image/312/312/mobile-holder/v/k/s/90cm-universal-long-lazy-mobile-phone-holder-stand-for-bed-desk-original-imaege5grgjzeajc.jpeg?q=70",
                    },
                    {
+                    id: 2,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -194,6 +211,7 @@ class Product1 extends React.Component {
                      img: "https://rukminim1.flixcart.com/image/312/312/j1i64y80/mobile-holder/2/g/z/golden-finger-grip-ring-for-samsung-gtc-original-imaetfha2zvpezux.jpeg?q=70",
                    },
                    {
+                    id: 3,
                     productId:"mobSam002",
                     productName: "Samsung",
                     about: "Best upcomming samsung series mobile",
@@ -214,7 +232,7 @@ class Product1 extends React.Component {
     return (
         <div className="row">
           <div className="homepge col-xs-12 col-md-12 col-sm-12 col-lg-12">
-               {this.state.data.map((dynamicComponent, i) => <Content 
+               {this.state.data .map((dynamicComponent, i) => <Content 
                   key = {i} componentData = {dynamicComponent}/>)}
             </div>
          </div>
@@ -222,34 +240,41 @@ class Product1 extends React.Component {
   }
 }
 
+
 class Content extends React.Component {
+
    render() {
+    
       return (
+
          <div  className="tiles col-xs-12 col-md-12  col-sm-12 col-lg-12" onClick="">        
             <div className="header">{this.props.componentData.header}</div>
               <div className="row">
-            	 <a className="pddescPge" href="#" onClick={this.openModal}>
-                 <div className="tilesL2 col-xs-12 col-md-4  col-sm-4 col-lg-4">
-                 <div className="row">
-                   <img alt="image" className="tileImg col-xs-12 col-md-4  col-sm-4 col-lg-4" src={this.props.componentData.products[0].img} width="350px" height="250px"/>                   
-                   <h2 className="pdName">{this.props.componentData.products[0].productName}</h2>
-                    <div className="price">
-                    <span className="sellPrice">Rs:{this.props.componentData.products[0].sellingPrice}</span>
-                    <span className="offerPrice">Rs:{this.props.componentData.products[0].offerPrice}</span>
-                    </div>
-                    <h3 className="pdAbout">{this.props.componentData.products[0].about}</h3>
-                  </div>                 
-                  <div className="specs">
-                    {this.props.componentData.products[0].specifications}
+                 {this.props.componentData.products.map((item, i) => (
+                <a className="pddescPge" href="#" onClick={this.openModal}>
+
+                  <div className="tilesL2 col-xs-12 col-md-3  col-md-offet-1 col-sm-3 col-sm-offet-1 col-lg-3 col-lg-offet-1">
+                      <div className="row">
+
+                        <img alt="image" className="tileImg col-xs-12 col-md-4  col-sm-4 col-lg-4" src={this.props.componentData.products[i].img} width="350px" height="250px"/>                   
+                        <h2 className="pdName">{this.props.componentData.products[i].productName}</h2>
+                              <div className="price">
+                                    <span className="sellPrice">Rs:{this.props.componentData.products[i].sellingPrice}</span>
+                                    <span className="offerPrice">Rs:{this.props.componentData.products[i].offerPrice}</span>
+                              </div>
+                        <h3 className="pdAbout">{this.props.componentData.products[i].about}</h3>
+                      </div>                 
+                      <div className="specs">
+                                {this.props.componentData.products[i].specifications}
+                      </div> 
                   </div>
-                  </div>
-               </a>
-            	 
-              </div>
-              
+                </a>  
+                ))}
+            </div>
          </div>
-        
+
       );
    }
 }
+
 export default Product1

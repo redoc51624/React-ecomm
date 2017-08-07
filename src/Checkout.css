@@ -16,6 +16,8 @@
     background: darkgrey;
     float :left;
     margin: 5px 20px;
+    border: 0;
+    box-shadow: 2px 2px 2px;
 }
 .addBtn{
     float: right;

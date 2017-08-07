@@ -11,10 +11,14 @@
   to { transform: rotate(360deg); }
 }
 .headLink{
-  float: right;
-  text-decoration: none;
-  color: #bfbfbf;
-  margin: 10px 5px;
+    font-weight: 600;
+    float: right;
+    text-decoration: none;
+    color: #bfbfbf;
+    margin: 10px 5px;
+}
+.headLink:hover{
+  text-shadow: 2px 2px 2px;
 }
 .headLink:hover{
    color: #bfbfbf;
@@ -41,14 +45,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
 	font-size: 30px;
 	margin: 16px 0;
 	font-weight: bold;
-
+   text-shadow: 2px 2px 2px grey;
 	text-align: center;
+}
+.title:hover,.title2:hover{
+   text-shadow: 3px 3px 3px grey;
 }
 .title2{
 	  color: white;
 	font-size: 16px;
 	font-weight: bold;
-	
+	text-shadow: 2px 2px 2px grey;
 	text-align: center;
 }
 .nav{
@@ -62,6 +69,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
 .navItem{
   color: #bfbfbf;
   padding: 10px 2px;
+  text-shadow: 2px 2px 2px grey;
   text-decoration: none;
   border-bottom: 1px solid black;
   text-transform: uppercase;
@@ -98,4 +106,7 @@ h3{
 }
 .pddescPge:hover{
   text-decoration: none;
+}
+.tilesL2{
+
 }
