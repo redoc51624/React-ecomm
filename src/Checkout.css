@@ -2,6 +2,25 @@
     float: right;
     background: "grey";
     position: relative;
-    bottom: 80px;
+    bottom: 60px;
     font-size: 24px;
+}
+.modContent{
+    margin:30px;
+}
+
+.cancelBtn,.addBtn{
+    display: inline-block;
+    width: 90px;
+    color:  black;
+    background: darkgrey;
+    float :left;
+    margin: 5px 20px;
+}
+.addBtn{
+    float: right;
+}
+.cancelBtn:hover,.addBtn:hover{
+    background: black;
+    color: white;
 }

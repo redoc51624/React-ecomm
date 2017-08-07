@@ -1,3 +1,18 @@
-.specs{
-	color: white;
-}
+	.pdName ,.pdAbout{
+		text-align: center;
+		margin: 3px 0;
+	}
+	.offerPrice{
+		text-align: center;
+		margin: 3px 10px;
+		color: red;
+	}
+	.sellPrice,{
+		text-align: center;
+		margin: 3px 10px;
+		text-decoration: line-through;
+	}
+	.price,.specs{
+		color: white;
+		    text-align: center;
+	}

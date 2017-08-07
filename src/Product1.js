@@ -216,7 +216,6 @@ class Product1 extends React.Component {
           <div className="homepge col-xs-12 col-md-12 col-sm-12 col-lg-12">
                {this.state.data.map((dynamicComponent, i) => <Content 
                   key = {i} componentData = {dynamicComponent}/>)}
-
             </div>
          </div>
     );
@@ -232,11 +231,13 @@ class Content extends React.Component {
             	 <a className="pddescPge" href="#" onClick={this.openModal}>
                  <div className="tilesL2 col-xs-12 col-md-4  col-sm-4 col-lg-4">
                  <div className="row">
-                   <h2>{this.props.componentData.products[0].productName}</h2>
-                   <h3>{this.props.componentData.products[0].about}</h3>
-                   <h3 className="sellPrice">Rs:{this.props.componentData.products[0].sellingPrice}</h3>
-                   <h3 className="offerPrice">{this.props.componentData.products[0].offerPrice}</h3>
-                   <img alt="image" className="tileImg col-xs-12 col-md-4  col-sm-4 col-lg-4" src={this.props.componentData.products[0].img} width="350px" height="250px"/>
+                   <img alt="image" className="tileImg col-xs-12 col-md-4  col-sm-4 col-lg-4" src={this.props.componentData.products[0].img} width="350px" height="250px"/>                   
+                   <h2 className="pdName">{this.props.componentData.products[0].productName}</h2>
+                    <div className="price">
+                    <span className="sellPrice">Rs:{this.props.componentData.products[0].sellingPrice}</span>
+                    <span className="offerPrice">Rs:{this.props.componentData.products[0].offerPrice}</span>
+                    </div>
+                    <h3 className="pdAbout">{this.props.componentData.products[0].about}</h3>
                   </div>                 
                   <div className="specs">
                     {this.props.componentData.products[0].specifications}

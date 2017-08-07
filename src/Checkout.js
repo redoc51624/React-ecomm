@@ -5,6 +5,7 @@ const customStyles = {
   
   content : {
     top                   : '50%',
+    width                 : '350px',
     left                  : '50%',
     border                : '1px solid #ccc',
     right                 : 'auto',
@@ -55,10 +56,10 @@ openModal() {
               <Modal isOpen={this.state.modalIsOpen} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} style={customStyles} contentLabel="Example Modal">
                 <h2 ref={subtitle => this.subtitle = subtitle}>Hello</h2>
                  <span className="closeBtn" onClick={this.closeModal}>x</span>
-                 <div>Modal content goes herr...</div>
+                 <div className="modContent">Modal content goes here...</div>
                  <form>
-                 <button>Cancel</button>
-                  <button>Add to Bag</button>
+                 <button className="cancelBtn">Cancel</button>
+                  <button className="addBtn">Add to Bag</button>
                  </form>
               </Modal>
       </div>
