@@ -1,12 +1,33 @@
 import React from 'react';
 import './Product1.css';
-import Modal from './Modal.js';
+import Modal from 'react-modal';
+const customStyles = {
+  
+  content : {
+    top                   : '50%',
+    width                 : '350px',
+    left                  : '50%',
+    border                : '1px solid #ccc',
+    right                 : 'auto',
+    bottom                : 'auto',
+    background            : 'grey',
+    marginRight           : '-50%',
+    transform               : 'translate(-50%, -50%)',
+    overflow                   : 'auto',
+    WebkitOverflowScrolling    : 'touch',
+    borderRadius               : '4px',
+    outline                    : 'none',
+    padding                    : '20px'
+  }
+};
 
 class Product1 extends React.Component {
 	constructor() {
       super();
-
-      this.state = {
+        this.openModal = this.openModal.bind(this);
+        this.afterOpenModal = this.afterOpenModal.bind(this);
+        this.closeModal = this.closeModal.bind(this);
+        this.state = {
          modalIsOpen: false,
          data: 
          [
@@ -226,7 +247,18 @@ class Product1 extends React.Component {
          ]
       }
     }
-
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+ 
+  afterOpenModal() {
+    // references are now sync'd and can be accessed. 
+    this.subtitle.style.color = '#f00';
+  }
+ 
+  closeModal() {
+    this.setState({modalIsOpen: false});
+  }
 
   render() {
     return (
@@ -268,7 +300,8 @@ class Content extends React.Component {
                                 {this.props.componentData.products[i].specifications}
                       </div> 
                   </div>
-                </a>  
+                </a>
+  
                 ))}
             </div>
          </div>

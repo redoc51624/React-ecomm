@@ -154,7 +154,6 @@ class Home extends React.Component {
         this.afterOpenModal = this.afterOpenModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
   }
-
   openModal() {
     this.setState({modalIsOpen: true});
   }
@@ -186,32 +185,9 @@ class Content extends React.Component {
        
          <div  className="tiles col-xs-12 col-md-12  col-sm-12 col-lg-12" onClick="">        
             <div className="header">{this.props.componentData.header}</div>
-              <div className="row">
+              <div className="row"  onClick={this.openModal}>
                  {this.props.componentData.products.map((item, i) => (
-                <a className="pddescPge" href="#" onClick={this.openModal}>
-
-              <Modal isOpen={this.state.modalIsOpen} onAfterOpen={this.afterOpenModal} onRequestClose={this.closeModal} style={customStyles} contentLabel="Example Modal">
-                <h2 className="pdName">{this.props.componentData.products[i].productName}</h2>
-                 <span className="closeBtn" onClick={this.closeModal}>x</span>
-                 <div className="modContent">
-                    <div className="tilesL2 col-xs-12 col-md-3  col-md-offet-1 col-sm-3 col-sm-offet-1 col-lg-3 col-lg-offet-1">
-                      <div className="row">
-                         div className="offerTag">{this.props.componentData.products[i].offerTag}</div>
-                          <img alt="image" className="tileImg col-xs-12 col-md-4  col-sm-4 col-lg-4" src={this.props.componentData.products[i].img} width="350px" height="250px"/>                   
-                          <h2 className="pdName">{this.props.componentData.products[i].productName}</h2>
-                                <div className="price">
-                                      <span className="sellPrice">Rs:{this.props.componentData.products[i].sellingPrice}</span>
-                                      <span className="offerPrice">Rs:{this.props.componentData.products[i].offerPrice}</span>
-                                </div>
-                          <h3 className="pdAbout">{this.props.componentData.products[i].about}</h3>
-                    </div>
-                 </div>
-                 <form>
-                 <button className="cancelBtn">Cancel</button>
-                  <button className="addBtn">Add to Bag</button>
-                 </form>
-              </Modal>
-
+                <div className="pddescPge">
                   <div className="tilesL2 col-xs-12 col-md-3  col-md-offet-1 col-sm-3 col-sm-offet-1 col-lg-3 col-lg-offet-1">
                       <div className="row">
                         <div className="offerTag">{this.props.componentData.products[i].offerTag}
@@ -228,9 +204,13 @@ class Content extends React.Component {
                                 {this.props.componentData.products[i].specifications}
                       </div> 
                   </div>
-                </a>  
+                </div>  
+
                 ))}
-            </div>
+
+              </div>
+              
+
          </div>
       );
    }
